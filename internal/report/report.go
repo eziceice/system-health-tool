@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	repoOwner     = "smartline"
+	repoOwner     = ""
 	pagerDocLower = "1pager.md"
 	pagerDocUpper = "1Pager.md"
 )
@@ -45,7 +45,7 @@ func GetReportDetails(ctx context.Context, environments model.Environments, targ
 func generateTitle(repo *github.Repository) string {
 	preTextString := &strings.Builder{}
 	preTextString.WriteString(fmt.Sprintf("System Health Report for <%v|%v>\n", *repo.HTMLURL, *repo.Name))
-	preTextString.WriteString("System Health URLs: <https://g3.reainternal.net/|REA GreenGreenGreen>, <https://g3.reainternal.net/|REA Tech Radar>\n")
+	preTextString.WriteString("System Health URLs: \n")
 	return preTextString.String()
 }
 

@@ -19,7 +19,7 @@ func main() {
 	environments := model.Environments{
 		BaseUrl:        util.GetEnv("BASE_URL", ""),
 		GitHubToken:    util.GetEnv("GITHUB_TOKEN", ""),
-		Org:            util.GetEnv("Org", "rea"),
+		Org:            util.GetEnv("Org", ""),
 		BuildKiteToken: util.GetEnv("BUILDKITE_TOKEN", ""),
 		SlackAppToken:  util.GetEnv("SLACKAPP_TOKEN", ""),
 		SlackAuthToken: util.GetEnv("SLACKAUTH_TOKEN", ""),
